@@ -1,0 +1,16 @@
+{
+	"@comment": "Note that the code to transform these data into a webpage is in https://github.com/Schnark/schnark.github.io",
+	"title": {
+		"en": "Redirector – App for Firefox OS",
+		"de": "Redirector – App für Firefox OS"
+	},
+	"serviceworker": true,
+	"icon": "res/icon-128.png",
+	"screenshots": [
+		"screenshot.png"
+	],
+	"desc": {
+		"en": ["This app allows you to redirect web pages to other web services.", "Before using it, you must configure it and add the services you want to use. Switch into the edit mode by using the button on the bottom and enter title and URL of these services. The URL of the page you want to use the service for will later be appended to the URL of the service.", "Two examples: To invoke the page just normal in the browser, you leave the URL empty. To view it via Google's Weblight service, the URL is http://googleweblight.com/?lite_url=", "There are many other services you can add to this app, e.g. services to print the page to a PDF file, to download a video or audio file, to receive updates via email, etc.", "To use it you have to enter the URL of the page you want to use the service for. You can enter the URL manually in the top bar, pick it from the bookmarks kept in the app (which are completely independent from the bookmarks in your browser), or share an URL an select the Redirector app as target."],
+		"de": ["Diese App ermöglicht es, Webseiten zu anderen Webdiensten weiterzuleiten.", "Bevor du sie benutzen kannst, musst du diese App zunächst konfigurieren und die Dienste hinzufügen, die du nutzen möchtest. Wechsle dazu über die Schaltfläche am Ende in den Bearbeiten-Modus und gib Titel und URL dieser Dienste an. Die URL der Seite, für die den Dienst nutzen willst, wird später an die URL des Dienstes angehängt.", "Zwei Beispiele: Um die Seite ganz gewöhnlich im Browser aufzurufen, lässt du die URL leer. Um sie über Googles Weblight-Dienst aufzurufen, lautet die URL http://googleweblight.com/?lite_url=", "Es gibt viele andere Dienste, die du hinzufügen kannst, beispielsweise um Seiten als PDF-Datei zu speichern, um Video- oder Audiodateien herunterzuladen, um über Aktualisierungen via E-Mail informiert zu werden etc.", "Um die App zu nutzen, musst du die URL der Seite angeben, für die den Dienst aufrufen willst. Du kannst sie von Hand in die oberste Zeile eingeben, sie aus den Lesezeichen wählen (die vollständig unabhängig von den Lesezeichen deines Browsers sind) oder die URL teilen und die Redirector-App als Ziel wählen."]
+	}
+}

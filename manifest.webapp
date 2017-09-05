@@ -1,0 +1,28 @@
+{
+	"version": "1.0",
+	"name": "Redirector",
+	"description": "Redirect URLs to other sites",
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/res/icon-128.png",
+		"512": "/res/icon-512.png"
+	},
+	"developer": {
+		"name": "Michael Müller",
+		"url": "https://github.com/Schnark"
+	},
+	"default_locale": "en",
+	"activities": {
+		"share": {
+			"filters": {
+				"type": "url",
+				"url": {
+					"required": true
+				}
+			},
+			"disposition": "window",
+			"returnValue": false,
+			"href": "/index.html"
+		}
+	}
+}

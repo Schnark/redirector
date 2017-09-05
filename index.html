@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Redirector</title>
+<meta name="viewport" content="width=device-width">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<meta name="msapplication-config" content="icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script>
+if (navigator.serviceWorker && !(navigator.mozApps && navigator.mozApps.installPackage)) {
+	navigator.serviceWorker.register('sw.js');
+}
+</script>
+<link rel="stylesheet" href="res/app.css">
+</head><body>
+<section id="bookmarks">
+<button id="bookmark-close">x</button>
+<ul id="bookmark-list"></ul>
+</section><div class="flex-line">
+<input type="url" id="url" placeholder="https://example.org">
+<span id="bookmark-star"></span>
+<span id="bookmark-open">…</span>
+</div>
+<section id="redirects">
+<ul id="redirect-list"></ul>
+<button id="redirect-edit">…</button>
+<div id="redirect-form">
+<div class="flex-line"><label for="redirect-title">Title:</label>
+<input id="redirect-title"></div>
+<div class="flex-line"><label for="redirect-url">URL:</label>
+<input id="redirect-url" type="url"></div>
+<button id="redirect-add">+</button>
+<button id="redirect-no-edit">…</button>
+</div>
+</section>
+<script src="res/app.js"></script>
+</body></html>

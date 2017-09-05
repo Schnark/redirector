@@ -1,0 +1,137 @@
+html {
+	font-family: sans-serif;
+}
+
+input,
+button {
+	font: inherit;
+}
+
+#bookmarks {
+	margin: 5px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 0 2px black;
+	display: none;
+}
+
+#bookmarks.visible {
+	display: block;
+}
+
+#bookmark-close {
+	float: right;
+	padding: 3px;
+	margin: 5px;
+}
+
+#bookmark-list {
+	margin: 0;
+	padding: 35px 5px 5px;
+}
+
+#bookmark-list li {
+	display: block;
+	border: 1px solid black;
+	padding: 5px 10px;
+	margin: 5px;
+	word-wrap: break-word;
+}
+
+.flex-line {
+	display: flex;
+}
+
+#url {
+	flex-grow: 1;
+}
+
+#bookmark-star {
+	color: #fd0;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#bookmark-star.bookmark::after {
+	content: "★";
+}
+
+#bookmark-star.no-bookmark::after {
+	content: "☆";
+}
+
+#bookmark-open {
+	padding: 5px;
+	cursor: pointer;
+}
+
+#redirect-list button,
+#redirect-form,
+#redirect-no-edit,
+#redirects.edit #redirect-edit {
+	display: none;
+}
+
+#redirects.edit #redirect-list button,
+#redirects.edit #redirect-form,
+#redirects.edit #redirect-no-edit,
+#redirect-edit {
+	display: block;
+}
+
+#redirect-list {
+	margin: 0;
+	padding: 0;
+}
+
+#redirect-list li {
+	display: block;
+	display: flex;
+}
+
+#redirect-list li a {
+	display: inline-block;
+	width: 95%;
+	line-height: 2;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border: none;
+	border-radius: 2px;
+	text-align: center;
+	background-image: linear-gradient(-45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%);
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	flex-grow: 1;
+}
+
+#redirect-list button,
+#redirect-no-edit,
+#redirect-edit {
+	float: right;
+	line-height: 2;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+}
+
+#redirect-form {
+	line-height: 2;
+}
+
+label {
+	margin-right: 0.5em;
+}
+
+#redirect-title,
+#redirect-url {
+	width: 90%;
+	flex-grow: 1;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
