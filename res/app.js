@@ -85,7 +85,8 @@ function removeRedirect (index) {
 function buildRedirects () {
 	var url = getUrl();
 	document.getElementById('redirect-list').innerHTML = data.redirects.map(function (redirect, index) {
-		return '<li><a rel="noopener" target="_blank" href="' + escape(redirect.url + url) + '">' + escape(redirect.title) + '</a> <button data-index="' + index + '">x</button></li>';
+		return '<li><a rel="noopener" target="_blank" href="' + escape(redirect.url + url) + '">' +
+			escape(redirect.title) + '</a> <button data-index="' + index + '">x</button></li>';
 	}).join('');
 }
 
